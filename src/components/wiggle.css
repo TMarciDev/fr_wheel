@@ -1,0 +1,11 @@
+.wiggle {
+	transform-origin: top;
+
+	animation: wiggle 0.15s ease-out;
+}
+
+@keyframes wiggle {
+	50% {
+		transform: rotate(-35deg);
+	}
+}
