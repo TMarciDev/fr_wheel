@@ -5,9 +5,13 @@ const Wheel = (props) => {
 	console.log(props.time);
 	return (
 		<div className={props.className}>
-			<img src='/images/WheelBackground.png' alt='' className='h-96' />
 			<img
-				src='/images/InnerWheel.png'
+				src='https://i.ibb.co/8jJ2pKV/Wheel-Background.png'
+				alt=''
+				className='h-96'
+			/>
+			<img
+				src='https://i.ibb.co/tMS1nxP/Inner-Wheel.png'
 				alt=''
 				className={'absolute transition ease-out'}
 				style={{
@@ -19,7 +23,7 @@ const Wheel = (props) => {
 				}}
 			/>
 			<img
-				src='/images/WheelPointer.png'
+				src='https://i.ibb.co/cwKMJND/Wheel-Pointer.png'
 				alt=''
 				className={'wiggle absolute'}
 				style={{
