@@ -17,16 +17,16 @@ function App() {
 	};
 
 	return (
-		<div className='flex justify-center xl:scale-150'>
+		<div className='main flex justify-center '>
 			<TurnInput
 				handleButtonClick={handleAngleChange}
 				setToZero={setToZero}
-				className='flex scale-50'
+				className='flex'
 			/>
 			<Wheel
 				angle={angle}
 				time={rotationTime}
-				className='scale-75 w-96 absolute top-0'
+				className='wheel w-96 absolute bottom-1/4'
 			/>
 		</div>
 	);

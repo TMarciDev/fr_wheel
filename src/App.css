@@ -1,0 +1,26 @@
+.wheel {
+	transform: scale(200%);
+}
+@media only screen and (max-width: 860px) {
+	.wheel {
+		transform: scale(150%);
+	}
+}
+
+@media only screen and (max-height: 820px) {
+	.wheel {
+		transform: scale(150%);
+	}
+}
+
+@media only screen and (max-height: 693px) {
+	.wheel {
+		transform: scale(100%);
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	.wheel {
+		transform: scale(100%);
+	}
+}
