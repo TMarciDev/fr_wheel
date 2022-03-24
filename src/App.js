@@ -13,15 +13,22 @@ function App() {
 	};
 
 	const setToZero = () => {
-		setAngle(0);
-		setRotationTime(0.1);
+		window.location.reload(false);
 	};
 
 	return (
-		<>
-			<TurnInput handleButtonClick={handleAngleChange} setToZero={setToZero} />
-			<Wheel angle={angle} time={rotationTime} className='relative border-2 ' />
-		</>
+		<div className='flex justify-center xl:scale-150'>
+			<TurnInput
+				handleButtonClick={handleAngleChange}
+				setToZero={setToZero}
+				className='flex scale-50'
+			/>
+			<Wheel
+				angle={angle}
+				time={rotationTime}
+				className='scale-75 w-96 absolute top-0'
+			/>
+		</div>
 	);
 }
 

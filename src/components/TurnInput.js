@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const TurnInput = (props) => {
 	const [value, setValue] = useState(0);
 	return (
-		<div>
+		<div className={props.className}>
 			<input
 				type='number'
 				value={value}
